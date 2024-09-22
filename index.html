@@ -3,60 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Heading Tags from H1 to H6</title>
+    <title>Doodle</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
+            text-align: center;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
         }
-        h1, h2, h3, h4, h5, h6 {
-            margin: 10px 0;
+
+        /* Centered container */
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100vh;
         }
+
+        /* Doodle title */
         h1 {
-            font-size: 2.5em;
-            color: #2E8B57;
+            font-size: 4em;
+            color: #4285F4; /* Google blue */
+            margin: 0;
         }
-        h2 {
-            font-size: 2em;
-            color: #4682B4;
+
+        /* Search bar */
+        .search-container {
+            margin-top: 20px;
         }
-        h3 {
-            font-size: 1.75em;
-            color: #8A2BE2;
+
+        input[type="text"] {
+            width: 500px;
+            height: 40px;
+            font-size: 18px;
+            padding: 10px;
+            border-radius: 20px;
+            border: 1px solid #d9d9d9;
+            box-shadow: 0px 1px 6px rgba(32,33,36,0.28);
+            outline: none;
         }
-        h4 {
-            font-size: 1.5em;
-            color: #FF8C00;
+
+        input[type="submit"] {
+            margin-top: 20px;
+            padding: 10px 25px;
+            font-size: 18px;
+            color: #fff;
+            background-color: #4285F4;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
         }
-        h5 {
-            font-size: 1.25em;
-            color: #FF4500;
+
+        /* Footer style */
+        .footer {
+            margin-top: 40px;
+            font-size: 14px;
+            color: #555;
         }
-        h6 {
-            font-size: 1em;
-            color: #A52A2A;
+
+        .footer a {
+            color: #555;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
-    <h1>This is an H1 Heading</h1>
-    <p>The <code>&lt;h1&gt;</code> tag is used for the most important heading, typically the main title of the webpage. It is the largest in size.</p>
+    <!-- Main container -->
+    <div class="container">
 
-    <h2>This is an H2 Heading</h2>
-    <p>The <code>&lt;h2&gt;</code> tag is used for subheadings, typically for sections under the main title. It is slightly smaller than the H1 heading.</p>
+        <!-- Title -->
+        <h1>Doodle</h1>
 
-    <h3>This is an H3 Heading</h3>
-    <p>The <code>&lt;h3&gt;</code> tag is used for further subdivisions within an H2 section, smaller in size.</p>
+        <!-- Search box -->
+        <div class="search-container">
+            <input type="text" placeholder="Search Doodle..." />
+            <br>
+            <input type="submit" value="Search" />
+        </div>
 
-    <h4>This is an H4 Heading</h4>
-    <p>The <code>&lt;h4&gt;</code> tag is used for subsections within an H3 section. It is smaller in size, often used for smaller headings or subtopics.</p>
+        <!-- Footer links -->
+        <div class="footer">
+            <a href="#">About</a>
+            <a href="#">Store</a>
+            <a href="#">Privacy</a>
+        </div>
 
-    <h5>This is an H5 Heading</h5>
-    <p>The <code>&lt;h5&gt;</code> tag is used for additional subdivisions. It is rarely used unless there are many nested sections.</p>
-
-    <h6>This is an H6 Heading</h6>
-    <p>The <code>&lt;h6&gt;</code> tag is the smallest heading tag. It is used for minor subsections or notes that are less prominent.</p>
+    </div>
 
 </body>
 </html>
